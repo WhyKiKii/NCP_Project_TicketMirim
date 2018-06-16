@@ -13,7 +13,6 @@ namespace NCP_Projectc_Ticket_Mirim
     public partial class Ticket_Mirim_reservatiion : Form
     {
         public static string str;
-        public static string sit1;
         public Ticket_Mirim_reservatiion()
         {
             InitializeComponent();
@@ -31,6 +30,9 @@ namespace NCP_Projectc_Ticket_Mirim
             string textValue = System.IO.File.ReadAllText(f_name, Encoding.Default);
             concert_infor.Text = textValue;*/
 
+            concert_infor.Text =
+            " 콘서트    슈퍼루키（Ver．끝판왕）：좋은콘서트＃1－서울\n\n 라인업    김하온, 이병재, 이로한, 윤진영, 조원우\n,오담률, 김윤호, 하선호, 김근수, 박준호\n\n공연기간  2018.07.07\n\n공연장 고려대학교 화정 체육관\n\n주최 / 주관 주식회사 좋은 콘서트\n\n  ----------------------------------------------------------\n\n가격 R석  55,000원\n\n S석  33.000원\n\n일반 12,000원";
+
 
             /*StreamReader sr = new StreamReader("concert_infor.txt");
 
@@ -44,13 +46,11 @@ namespace NCP_Projectc_Ticket_Mirim
             listBox_yj.Items.Add("R석 300석");
             listBox_yj.Items.Add("S석 300석");
             listBox_yj.Items.Add("일반 600석");
+            
 
             //pictureBox1.Load(@"C:\Users\Mirim\source\repos\NCP_Project_yj\NCP_Project_yj\Ticket_Mirim.png");
             //pictureBox1.Image = System.Drawing.Image.FromFile(@"C:\Users\Mirim\source\repos\NCP_Project_yj\NCP_Project_yj\Ticket_Mirim.png");
-
-            label3.Text = str;
-
-    }
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -66,20 +66,13 @@ namespace NCP_Projectc_Ticket_Mirim
         private void button1_yj_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            Ticket_Mirim_approval approval = new Ticket_Mirim_approval();
-            approval.ShowDialog();
+            DMC dmc = new DMC();
+            dmc.ShowDialog();
         }
 
-        private void Nex_A_07_Click(object sender, EventArgs e)
+        private void concert_infor_Click(object sender, EventArgs e)
         {
-            sit1 = "앙기모찌";
-            Nex_A_07.BackColor = Color.Purple;
-            label3.Text = sit1;
-        }
 
-        private void Nex_A_08_Click(object sender, EventArgs e)
-        {
-            Nex_A_07.BackColor = Color.Purple;
         }
     }
 }

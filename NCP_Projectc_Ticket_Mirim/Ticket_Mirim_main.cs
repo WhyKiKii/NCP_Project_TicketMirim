@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace NCP_Projectc_Ticket_Mirim
 {
     public partial class Ticket_Mirim_main : Form
-    {  
+    {
         public Ticket_Mirim_main()
         {
             InitializeComponent();
@@ -23,6 +23,7 @@ namespace NCP_Projectc_Ticket_Mirim
 
             comboBox_S.Items.AddRange(data);
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             this.Visible = false;
@@ -45,9 +46,9 @@ namespace NCP_Projectc_Ticket_Mirim
 
         }
 
-        private void comboBox_S_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Ticket_Mirim_reservatiion.str = comboBox_S.SelectedItem.ToString();
+
         }
     }
 }

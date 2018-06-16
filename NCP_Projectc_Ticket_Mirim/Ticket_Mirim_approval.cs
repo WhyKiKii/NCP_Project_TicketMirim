@@ -17,6 +17,7 @@ namespace NCP_Projectc_Ticket_Mirim
             InitializeComponent();
         }
 
+
         Credit_Card credit = new Credit_Card();
         Transfer transfer = new Transfer();
         Deposit deposit = new Deposit();
@@ -74,11 +75,6 @@ namespace NCP_Projectc_Ticket_Mirim
             this.Visible = false;
             Ticket_Mirim_reservatiion approval = new Ticket_Mirim_reservatiion();
             approval.ShowDialog();
-        }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-            label1.Text = Ticket_Mirim_reservatiion.sit1;
         }
     }
 }

@@ -41,7 +41,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.K_BackPage = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,7 +107,6 @@
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "무통장입금";
             this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // radioButton4
             // 
@@ -206,15 +204,6 @@
             this.K_BackPage.UseVisualStyleBackColor = false;
             this.K_BackPage.Click += new System.EventHandler(this.K_BackPage_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(240, 484);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 12);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "label1";
-            // 
             // Ticket_Mirim_approval
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -222,7 +211,6 @@
             this.BackColor = System.Drawing.Color.LemonChiffon;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(884, 561);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.K_payment);
             this.Controls.Add(this.label5);
@@ -255,6 +243,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button K_BackPage;
-        private System.Windows.Forms.Label label1;
     }
 }

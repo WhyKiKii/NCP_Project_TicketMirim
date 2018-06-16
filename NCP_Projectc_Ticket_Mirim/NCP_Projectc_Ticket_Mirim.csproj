@@ -45,6 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Blue_Square.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Blue_Square.Designer.cs">
+      <DependentUpon>Blue_Square.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charlotte_Theater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charlotte_Theater.Designer.cs">
+      <DependentUpon>Charlotte_Theater.cs</DependentUpon>
+    </Compile>
     <Compile Include="Credit_Card.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +69,12 @@
     <Compile Include="Deposit.Designer.cs">
       <DependentUpon>Deposit.cs</DependentUpon>
     </Compile>
+    <Compile Include="DMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMC.Designer.cs">
+      <DependentUpon>DMC.cs</DependentUpon>
+    </Compile>
     <Compile Include="MicroPayment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +86,12 @@
     </Compile>
     <Compile Include="NaverPay.Designer.cs">
       <DependentUpon>NaverPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEX.Designer.cs">
+      <DependentUpon>NEX.cs</DependentUpon>
     </Compile>
     <Compile Include="Payco.cs">
       <SubType>Form</SubType>
@@ -101,17 +125,29 @@
     <Compile Include="Transfer.Designer.cs">
       <DependentUpon>Transfer.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Blue_Square.resx">
+      <DependentUpon>Blue_Square.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charlotte_Theater.resx">
+      <DependentUpon>Charlotte_Theater.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Credit_Card.resx">
       <DependentUpon>Credit_Card.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Deposit.resx">
       <DependentUpon>Deposit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DMC.resx">
+      <DependentUpon>DMC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MicroPayment.resx">
       <DependentUpon>MicroPayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NaverPay.resx">
       <DependentUpon>NaverPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEX.resx">
+      <DependentUpon>NEX.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Payco.resx">
       <DependentUpon>Payco.cs</DependentUpon>
