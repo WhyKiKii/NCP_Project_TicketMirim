@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +12,8 @@ namespace NCP_Projectc_Ticket_Mirim
 {
     public partial class Ticket_Mirim_reservatiion : Form
     {
+        public static string str;
+        public static string sit1;
         public Ticket_Mirim_reservatiion()
         {
             InitializeComponent();
@@ -30,10 +31,6 @@ namespace NCP_Projectc_Ticket_Mirim
             string textValue = System.IO.File.ReadAllText(f_name, Encoding.Default);
             concert_infor.Text = textValue;*/
 
-            string[] text = File.ReadAllLines(@"..\txt\concert_infor.txt");
-
-            concert_infor.Text = text[1]; 
-
 
             /*StreamReader sr = new StreamReader("concert_infor.txt");
 
@@ -50,7 +47,10 @@ namespace NCP_Projectc_Ticket_Mirim
 
             //pictureBox1.Load(@"C:\Users\Mirim\source\repos\NCP_Project_yj\NCP_Project_yj\Ticket_Mirim.png");
             //pictureBox1.Image = System.Drawing.Image.FromFile(@"C:\Users\Mirim\source\repos\NCP_Project_yj\NCP_Project_yj\Ticket_Mirim.png");
-        }
+
+            label3.Text = str;
+
+    }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -70,9 +70,16 @@ namespace NCP_Projectc_Ticket_Mirim
             approval.ShowDialog();
         }
 
-        private void concert_infor_Click(object sender, EventArgs e)
+        private void Nex_A_07_Click(object sender, EventArgs e)
         {
+            sit1 = "앙기모찌";
+            Nex_A_07.BackColor = Color.Purple;
+            label3.Text = sit1;
+        }
 
+        private void Nex_A_08_Click(object sender, EventArgs e)
+        {
+            Nex_A_07.BackColor = Color.Purple;
         }
     }
 }
