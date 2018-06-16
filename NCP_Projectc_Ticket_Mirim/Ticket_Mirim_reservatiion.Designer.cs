@@ -69,6 +69,7 @@
             this.concert_infor.AutoSize = true;
             this.concert_infor.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.concert_infor.Location = new System.Drawing.Point(268, 164);
+            this.concert_infor.MaximumSize = new System.Drawing.Size(320, 26);
             this.concert_infor.Name = "concert_infor";
             this.concert_infor.Size = new System.Drawing.Size(80, 14);
             this.concert_infor.TabIndex = 9;

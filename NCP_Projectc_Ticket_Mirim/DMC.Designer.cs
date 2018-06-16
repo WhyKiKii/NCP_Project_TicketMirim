@@ -812,7 +812,6 @@
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.con_name = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -10108,7 +10107,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.con_name);
             this.groupBox1.Controls.Add(this.button1_yj);
             this.groupBox1.Controls.Add(this.listBox_yj);
             this.groupBox1.Controls.Add(this.label2);
@@ -10198,15 +10196,6 @@
             this.pictureBox2.Size = new System.Drawing.Size(600, 534);
             this.pictureBox2.TabIndex = 2355;
             this.pictureBox2.TabStop = false;
-            // 
-            // con_name
-            // 
-            this.con_name.AutoSize = true;
-            this.con_name.Location = new System.Drawing.Point(16, 195);
-            this.con_name.Name = "con_name";
-            this.con_name.Size = new System.Drawing.Size(51, 16);
-            this.con_name.TabIndex = 6;
-            this.con_name.Text = "label3";
             // 
             // DMC
             // 
@@ -10993,7 +10982,6 @@
             this.Controls.Add(this.pictureBox2);
             this.Name = "DMC";
             this.Text = "DMC";
-            this.Load += new System.EventHandler(this.DMC_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -11787,6 +11775,5 @@
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label con_name;
     }
 }

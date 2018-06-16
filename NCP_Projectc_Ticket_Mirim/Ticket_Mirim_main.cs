@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +20,9 @@ namespace NCP_Projectc_Ticket_Mirim
 
         private void Ticket_Mirim_main_Load(object sender, EventArgs e)
         {
-            string[] data = { "슈퍼루키（Ver．끝판왕）좋은콘서트＃1－서울", "오버워치 핫식스 APEX 시즌3 결승전","어반 뮤직 페스티벌 2018" };
-
-            comboBox_S.Items.AddRange(data);
+            string[] text = File.ReadAllLines(@"..\txt\Con_Title.txt");
+            
+            comboBox_S.Items.AddRange(text);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,9 +47,5 @@ namespace NCP_Projectc_Ticket_Mirim
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
